@@ -1,0 +1,21 @@
+Frontend
+- VueJs 
+- Tailwind css
+
+Component 
+- Header
+- Footer
+
+Views
+- Page d'accueil 
+- Page des produit 
+- Page panier
+- Page About
+- Page contact Us
+- Page 404 not found avec un bouton home qui ramène sur la - - Page d'accueil
+
+
+Backend
+
+-Express
+-Mysql
