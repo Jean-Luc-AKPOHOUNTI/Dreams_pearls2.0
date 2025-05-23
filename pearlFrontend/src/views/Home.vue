@@ -7,7 +7,7 @@ import { Icon } from '@iconify/vue';
 <template>
     <div class="h-full">
         <!-- Aceuil -->
-        <div class="flex justify-around items-center pt-10 h-[750px] bg-[url('https://img.freepik.com/premium-photo/luxury-expensive-jewelry-design-professional-macro-photography-black-background_950002-45913.jpg')] bg-no-repeat bg-cover bg-center">
+        <div class="flex justify-around items-center pt-10 h-[750px] bg-[url('https://cdn.pixabay.com/photo/2024/12/29/22/23/ai-generated-9298897_1280.png')] bg-no-repeat bg-cover bg-center">
             <div class="flex flex-col items-center justify-center gap-4 w-5/10 h-96">
                 <div class="w-full m-0">
                     <h1 class="w-full text-white font-extralight text-7xl">Our Luxury</h1>
@@ -59,7 +59,7 @@ import { Icon } from '@iconify/vue';
             <h2 class="w-full p-4 mb-4 text-center text-3xl bg-slate-50">About US</h2>
             <div class="flex justify-around items-center">
                 <div class=" w-3/10 h-[400px]">
-                    <img class="h-full" src="https://blenderartists.org/uploads/default/original/4X/d/8/9/d8959cbadb1af1506237f4787f4799e8f2de4e15.jpeg" alt="Logo du site">
+                    <img class="h-full" src="https://media.istockphoto.com/id/175191733/fr/photo/le-mari%C3%A9-et-la-mari%C3%A9e-de-mains.jpg?s=612x612&w=0&k=20&c=NNsTz1CTyQdDk6sjUoRoqlFY16wi3kgvWauzmTwYnms=" alt="Logo du site">
                 </div>
                 <div class="w-5/10">
                     <p class="text-justify text-2xl">

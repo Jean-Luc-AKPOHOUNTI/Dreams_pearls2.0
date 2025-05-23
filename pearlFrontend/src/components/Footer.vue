@@ -22,7 +22,7 @@ const socialLinks = [
 const contactInfo = {
     address: '123 Rue des Bijoux, 75001 Cotonou',
     phone: '+229 01 51 51 96 81',
-    email: 'dreampearl@gmail.com'
+    email: 'dreamspearl@gmail.com'
 }
 </script>
 

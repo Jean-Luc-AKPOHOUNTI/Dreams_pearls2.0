@@ -29,11 +29,11 @@ const toggleMenu = () => {
                 <RouterLink to="/" class="relative group">
                     <div class="relative">
                         <img 
-                            class="h-16 w-auto transition-all duration-500 group-hover:brightness-110" 
+                            class="h-16 w-auto" 
                             src="../assets/Dreams_Pearls.png" 
                             alt="Dream Pearls Logo"
                         >
-                        <div class="absolute inset-0 bg-gradient-to-r from-amber-500/20 to-amber-300/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <!-- <div class="absolute inset-0 bg-gradient-to-r from-amber-500/20 to-amber-300/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div> -->
                     </div>
                 </RouterLink>
 
@@ -51,7 +51,7 @@ const toggleMenu = () => {
                         class="group relative px-4 py-2"
                     >
                         <div class="flex items-center space-x-2">
-                            <Icon :icon="link.icon" class="text-amber-400" width="20" />
+                            <!-- <Icon :icon="link.icon" class="text-amber-400" width="20" /> -->
                             <span class="text-white font-medium">{{ link.text }}</span>
                         </div>
                         <div class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-amber-500 to-amber-300 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>

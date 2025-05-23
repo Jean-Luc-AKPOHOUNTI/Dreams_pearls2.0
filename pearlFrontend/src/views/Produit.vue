@@ -4,12 +4,12 @@ import { ref } from 'vue';
 import { useCartStore } from '../stores/cart'
 
 let offre1 = ref([
-    { name: 'Hanche1', price: 50, src: 'https://cbu01.alicdn.com/img/ibank/O1CN01F0h5CU1p04lymEjRh_!!2916035297-0-cib.310x310.jpg' },
+    { name: 'Hanche1', price: 50, src: 'https://s3.amazonaws.com/images.ecwid.com/images/37089376/1779531154.jpg' },
     { name: 'Hanche2', price: 90, src: 'https://cbu01.alicdn.com/img/ibank/O1CN01AuAw9g1I5g9tqgNt9_!!2207780050842-0-cib.jpg' },
-    { name: 'Hanche3', price: 60, src: 'https://chic-et-chaine.com/cdn/shop/products/Collier-de-Hanche_2000x.jpg?v=1673341090' },
-    { name: 'Hanche4', price: 70, src: 'https://cbu01.alicdn.com/img/ibank/O1CN01F0h5CU1p04lymEjRh_!!2916035297-0-cib.310x310.jpg' },
-    { name: 'Hanche5', price: 80, src: 'https://cbu01.alicdn.com/img/ibank/O1CN01AuAw9g1I5g9tqgNt9_!!2207780050842-0-cib.jpg' },
-    { name: 'Hanche6', price: 40, src: 'https://chic-et-chaine.com/cdn/shop/products/Collier-de-Hanche_2000x.jpg?v=1673341090' },
+    { name: 'Hanche3', price: 60, src: 'https://undershop.pl/2431-thickbox_default/32844758887-jaycosin-nowo-zaprojektowac-damskie-fashoin-eleganckie-faux-pearl-koraliki-rhinestone-charms-pas-biodrowy-pasek-1606.jpg' },
+    { name: 'Hanche4', price: 70, src: 'https://th.bing.com/th/id/OIP.QK6-5xtKnnruOodFWz71JgHaHa?o=7&cb=iwp2rm=3&rs=1&pid=ImgDetMain' },
+    { name: 'Hanche5', price: 80, src: 'https://cbu01.alicdn.com/img/ibank/2020/260/977/22674779062_1175954157.jpg' },
+    { name: 'Hanche6', price: 40, src: 'https://down-th.img.susercontent.com/file/th-11134207-7r992-loz2k295b71lc3' },
 ])
 
 let offre2 = ref([
@@ -22,18 +22,18 @@ let offre2 = ref([
 ])
 
 let offre3 = ref([
-    { name: 'collier1', price: 100, src: 'https://lesbijouxdelili.com/wp-content/uploads/2018/10/colliers-femme-800x800.jpg' },
-    { name: 'collier2', price: 150, src: 'https://th.bing.com/th/id/OIP.y3qI8W1vJciGm0mY2XQudAHaHa?cb=iwp2&rs=1&pid=ImgDetMain' },
+    { name: 'collier1', price: 100, src: 'https://images.herzindagi.info/image/2022/Oct/pearl-choker-jewellery.jpg' },
     { name: 'collier3', price: 120, src: 'https://www.france-perles.fr/wp-content/uploads/2022/03/collier-perles-de-majorque-orquidea-46269-01.jpg' },
-    { name: 'collier4', price: 155, src: 'https://th.bing.com/th/id/OIP.y3qI8W1vJciGm0mY2XQudAHaHa?cb=iwp2&rs=1&pid=ImgDetMain' },
-    { name: 'collier5', price: 170, src: 'https://www.france-perles.fr/wp-content/uploads/2022/03/collier-perles-de-majorque-orquidea-46269-01.jpg' },
+    { name: 'collier2', price: 150, src: 'https://i.pinimg.com/736x/71/47/64/714764b6dc8d7eec8e72bfc1655ca70f.jpg' },
+    { name: 'collier4', price: 155, src: 'https://www.houseofkahn.com/wp-content/uploads/2018/06/3b-3-strand-Pearl-necklace-600x600.jpg' },
+    { name: 'collier5', price: 170, src: 'https://i.pinimg.com/736x/0c/00/9f/0c009f815a7e1f36e18a5841c6734413.jpg' },
     { name: 'collier6', price: 130, src: 'https://th.bing.com/th/id/OIP.y3qI8W1vJciGm0mY2XQudAHaHa?cb=iwp2&rs=1&pid=ImgDetMain' },
 ])
 
 let produits = ref([
     { name: "Offre N°1", items: offre1, mage: 'https://i.etsystatic.com/15964649/r/il/ca5d57/3015926270/il_1588xN.3015926270_4m7a.jpg' },
     { name: "Offre N°2", items: offre2, mage: 'https://www.naniloajewels.com/326-large_default/chaine-de-cheville-arbre-de-vie-en-pierres-de-howlite.jpg' },
-    { name: "Offre N°3", items: offre3, mage: 'https://a.1stdibscdn.com/garrard-albemarle-18-karat-white-gold-diamond-2114cts-five-row-necklace-for-sale-picture-3/j_13533/1561395810943/2019_06_04_SH29_2013247_1st_Dibs_1695_master.jpg?width=768' },
+    { name: "Offre N°3", items: offre3, mage: 'https://th.bing.com/th/id/OIP.TsvTl4YxVVt6NllensHeYwHaHa?cb=iwp2&w=1000&h=1000&rs=1&pid=ImgDetMain' },
 ]);
 
 let currentIndex = ref(0);
