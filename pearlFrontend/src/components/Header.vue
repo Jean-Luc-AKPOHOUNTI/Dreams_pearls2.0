@@ -5,15 +5,7 @@ import { useCartStore } from '../stores/cart'
 import { ref, onMounted } from 'vue'
 
 const cartStore = useCartStore()
-// const isScrolled = ref(false)
 const isMenuOpen = ref(false)
-
-// Gestion du scroll pour le header
-// onMounted(() => {
-//     window.addEventListener('scroll', () => {
-//         isScrolled.value = window.scrollY > 20
-//     })
-// })
 
 const toggleMenu = () => {
     isMenuOpen.value = !isMenuOpen.value
@@ -27,13 +19,12 @@ const toggleMenu = () => {
             <div class="flex justify-between items-center">
                 <!-- Logo -->
                 <RouterLink to="/" class="relative group">
-                    <div class="relative">
+                    <div class="relative rounded-full overflow-hidden">
                         <img 
                             class="h-16 w-auto" 
                             src="../assets/Dreams_Pearls.png" 
                             alt="Dream Pearls Logo"
                         >
-                        <!-- <div class="absolute inset-0 bg-gradient-to-r from-amber-500/20 to-amber-300/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div> -->
                     </div>
                 </RouterLink>
 
@@ -48,11 +39,12 @@ const toggleMenu = () => {
                         ]" 
                         :key="link.to"
                         :to="link.to"
-                        class="group relative px-4 py-2"
+                        class="group relative px-4 py-2 text-white font-medium transition-colors duration-300 hover:text-amber-400"
+                        active-class="text-amber-400"
                     >
                         <div class="flex items-center space-x-2">
                             <!-- <Icon :icon="link.icon" class="text-amber-400" width="20" /> -->
-                            <span class="text-white font-medium">{{ link.text }}</span>
+                            <span>{{ link.text }}</span>
                         </div>
                         <div class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-amber-500 to-amber-300 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
                     </RouterLink>
@@ -69,7 +61,7 @@ const toggleMenu = () => {
                             <!-- Badge du nombre d'articles -->
                             <div 
                                 v-if="cartStore.cartItemsCount > 0"
-                                class="absolute -top-2 -right-2 bg-gradient-to-r from-amber-500 to-amber-300 text-white text-sm font-bold rounded-full w-6 h-6 flex items-center justify-center transform transition-all duration-300 group-hover:scale-110 shadow-lg"
+                                class="absolute -top-2 -right-2 bg-gradient-to-r from-amber-500 to-amber-300 text-white text-sm font-bold rounded-full w-6 h-6 flex items-center justify-center transform transition-all duration-300 group-hover:scale-110 shadow-lg animate-pulse-custom"
                             >
                                 {{ cartStore.cartItemsCount }}
                             </div>
@@ -116,6 +108,7 @@ const toggleMenu = () => {
                         :key="link.to"
                         :to="link.to"
                         class="flex items-center space-x-3 py-3 text-white hover:text-amber-400 transition-colors duration-300"
+                        active-class="text-amber-400"
                         @click="isMenuOpen = false"
                     >
                         <Icon :icon="link.icon" width="24" />
@@ -130,35 +123,4 @@ const toggleMenu = () => {
     <div class="h-24"></div>
 </template>
 
-<style scoped>
-/* Animation pour les liens actifs */
-.router-link-active {
-    color: #f59e0b;
-}
 
-.router-link-active .text-white {
-    color: #f59e0b;
-}
-
-/* Animation du badge du panier */
-@keyframes pulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-}
-
-.group:hover .absolute {
-    animation: pulse 1s ease infinite;
-}
-
-/* Animation du menu mobile */
-.menu-enter-active,
-.menu-leave-active {
-    transition: all 0.3s ease;
-}
-
-.menu-enter-from,
-.menu-leave-to {
-    opacity: 0;
-    transform: translateY(-10px);
-}
-</style>

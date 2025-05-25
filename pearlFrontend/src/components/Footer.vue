@@ -48,9 +48,11 @@ const contactInfo = {
                         <li v-for="link in quickLinks" :key="link.name">
                             <RouterLink 
                                 :to="link.path"
-                                class="text-gray-400 hover:text-amber-500 transition-colors duration-300"
+                                class="relative text-gray-400 hover:text-amber-500 transition-colors duration-300 group inline-block"
                             >
                                 {{ link.name }}
+                                <!-- Soulignement animé avec Tailwind -->
+                                <span class="absolute bottom-0 left-0 w-full h-0.5 bg-amber-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
                             </RouterLink>
                         </li>
                     </ul>
@@ -84,10 +86,12 @@ const contactInfo = {
                             :key="social.name"
                             :href="social.url"
                             target="_blank"
-                            class="text-gray-400 hover:text-amber-500 transition-colors duration-300"
+                            class="relative text-gray-400 hover:text-amber-500 transition-colors duration-300 group inline-block"
                             :title="social.name"
                         >
                             <Icon :icon="social.icon" width="24" />
+                             <!-- Soulignement animé avec Tailwind -->
+                             <span class="absolute bottom-0 left-0 w-full h-0.5 bg-amber-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
                         </a>
                     </div>
                 </div>
@@ -102,8 +106,8 @@ const contactInfo = {
                         © {{ new Date().getFullYear() }} Dream Pearl. Tous droits réservés.
                     </p>
                     <div class="flex space-x-4 mt-4 md:mt-0">
-                        <a href="#" class="text-gray-400 hover:text-amber-500 text-sm">Politique de confidentialité</a>
-                        <a href="#" class="text-gray-400 hover:text-amber-500 text-sm">Conditions d'utilisation</a>
+                        <a href="#" class="relative text-gray-400 hover:text-amber-500 text-sm group inline-block">Politique de confidentialité<span class="absolute bottom-0 left-0 w-full h-0.5 bg-amber-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span></a>
+                        <a href="#" class="relative text-gray-400 hover:text-amber-500 text-sm group inline-block">Conditions d'utilisation<span class="absolute bottom-0 left-0 w-full h-0.5 bg-amber-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span></a>
                     </div>
                 </div>
             </div>
@@ -111,6 +115,8 @@ const contactInfo = {
     </footer>
 </template>
 
+<!-- Les styles CSS traditionnels sont remplacés par Tailwind -->
+<!--
 <style scoped>
 /* Animation pour les liens au survol */
 a {
@@ -132,3 +138,4 @@ a:hover::after {
     width: 100%;
 }
 </style>
+-->

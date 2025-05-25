@@ -10,13 +10,13 @@ import { Icon } from '@iconify/vue';
         <div class="flex justify-around items-center pt-10 h-[750px] bg-[url('https://cdn.pixabay.com/photo/2024/12/29/22/23/ai-generated-9298897_1280.png')] bg-no-repeat bg-cover bg-center">
             <div class="flex flex-col items-center justify-center gap-4 w-5/10 h-96">
                 <div class="w-full m-0">
-                    <h1 class="w-full text-white font-extralight text-7xl">Our Luxury</h1>
-                    <h1 class="w-full text-white font-extralight text-7xl"> Collection</h1>
+                    <h1 class="w-full text-white font-extralight text-7xl">Dreams Pearls</h1>
+                    <h4 class="w-full text-white font-extralight text-5xl">Our Luxury Collection</h4>
                 </div>
                 <p class="text-justify text-2xl text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aspernatur nam, perferendis, quasi, quos sapiente voluptate quia eum asperiores optio labore quidem velit exercitationem quisquam modi repellat beatae doloremque fugit.</p>
             </div>
-            <div class=" flex items-center justify-center w-3/10">
-                <!-- <img class="" src="https://i.pinimg.com/736x/a8/1a/6f/a81a6fad94a349d64990a0b45ba9c1cd.jpg" alt="Image d'ensemble de perle"> -->
+            <div class="w-3/10 rounded-2xl shadow-2xl p-2 orverflow-hidden border border-white bg-white/20">
+                <img class="h-full w-full rounded-md" src="https://i.pinimg.com/736x/4f/28/62/4f28627262fe1cc79fb078cf60f2af21.jpg" alt="Image d'ensemble de perle">
             </div>
         </div>
 

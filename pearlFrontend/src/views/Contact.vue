@@ -115,7 +115,7 @@ const handleSubmit = async () => {
                             <Icon icon="mdi:email" class="text-amber-500" width="24" />
                             <div>
                                 <h3 class="font-medium">Email</h3>
-                                <p class="text-gray-600">dreampearl@gmail.com</p>
+                                <p class="text-gray-600">dreamspearl@gmail.com</p>
                             </div>
                         </div>
 
